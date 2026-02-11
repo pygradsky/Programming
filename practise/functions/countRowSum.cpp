@@ -1,3 +1,6 @@
+// Вертоградский Фёдор 11.02.2026 (Практическая работа)
+
+
 #include <iostream>
 using namespace std;
 
@@ -22,6 +25,6 @@ int countRowSum()
 int main()
 {
     int result = countRowSum();
-    cout << "Сумма ряда: " << result << endl;
+    cout << "Сумма натурального ряда: " << result << endl;
     return 0;
 }
