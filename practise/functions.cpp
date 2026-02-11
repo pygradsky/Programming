@@ -2,23 +2,27 @@
 #include <string>
 using namespace std;
 
-string printDivisionSeries()
+int countRowSum()
 {
-    int n = 1;
+    int n;
+    int sum = 0;
     
-    for (int i = 0; i < 5; i++)
+    cout << "Введите число до которого будем считать натуральный ряд" << endl;
+    cin >> n;
+    cout << "Введенное число: " << n << endl;
+    
+    for (int i = 1; i < n; i++)
     {
-        double result = 1.0 / n;
-        cout << "1 / " << n << " = " << result << endl;
-        n++;
+        sum += i;
+        cout << "Текущее число: " << i << endl;
     }
     
-    return "\nЗакончено выполнение функции 'printDivisionSeries'.";
+    return sum;
 }
 
 int main()
 {
-    string message = printDivisionSeries();
-    cout << message << endl;
+    int result = countRowSum();
+    cout << "Сумма ряда: " << result << endl;
     return 0;
 }
