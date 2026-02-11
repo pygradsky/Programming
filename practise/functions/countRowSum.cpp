@@ -25,6 +25,6 @@ int countRowSum()
 int main()
 {
     int result = countRowSum();
-    cout << "Сумма натурального ряда: " << result << endl;
+    cout << "\nСумма натурального ряда: " << result << endl;
     return 0;
 }
