@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void demonstrateLoops() {
+int main() {
     int number;
     
     cout << "Введите число для таблицы умножения: ";
@@ -30,9 +30,5 @@ void demonstrateLoops() {
         }
     } while(choice != 0);
     cout << "Программа завершена" << endl;
-}
-
-int main() {
-    demonstrateLoops();
     return 0;
 }
