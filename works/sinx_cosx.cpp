@@ -2,16 +2,16 @@
 #include <cmath>
 using namespace std;
 
-double calculateSinX(double* x) {
-    return sin(*x);
+double calculateSinX(double** ptr) {
+    return sin(**ptr);
 }
 
-double calculateCosX(double* x) {
-    return cos(*x);
+double calculateCosX(double** ptr) {
+    return cos(**ptr);
 }
 
-double calculateTanX(double* x) {
-    return sin(*x) / cos(*x);
+double calculateTanX(double** ptr) {
+    return sin(**ptr) / cos(**ptr);
 }
 
 int main() {
@@ -20,9 +20,11 @@ int main() {
     cout << "Введите значение x в радианах: ";
     cin >> x;
     
-    cout << "sin(x) = " << calculateSinX(&x) << endl;
-    cout << "cos(x) = " << calculateCosX(&x) << endl;
-    cout << "tan(x) = sin(x)/cos(x) = " << calculateTanX(&x) << endl;
+    double* pX = &x;
+    
+    cout << "sin(x) = " << calculateSinX(&pX) << endl;
+    cout << "cos(x) = " << calculateCosX(&pX) << endl;
+    cout << "tan(x) = " << calculateTanX(&pX) << endl;
     
     return 0;
 }
