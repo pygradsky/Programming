@@ -1,10 +1,12 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+
 void printHeader() {
     cout << " x\\yz | 00 | 01 | 11 | 10 |\n";
     cout << "------|----|----|----|----|\n";
 }
+
 int main() {
     cout << "Карта для: (x && y) || z\n";
     printHeader();
