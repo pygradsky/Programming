@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-
 using namespace std;
 
 double calculateLnSeries(double x, int N) {
