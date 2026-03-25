@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 using namespace std;
+
 void printKMap(const string& title, bool (*func)(int, int, int)) {
     int grayCode[] = {0, 1, 3, 2};
     string labels[] = {"00", "01", "11", "10"};
@@ -22,9 +23,11 @@ void printKMap(const string& title, bool (*func)(int, int, int)) {
     }
     cout << endl;
 }
+
 bool f1(int x, int y, int z) { return (x && y) || z; }
 bool f2(int x, int y, int z) { return x || (!(y && z)); }
 bool f3(int x, int y, int z) { return (!x);  y;  z; }
+
 int main() {
     printKMap("(x and y or z)", f1);
     printKMap("(x or (not(y and z)))", f2);
