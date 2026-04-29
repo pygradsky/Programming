@@ -2,8 +2,6 @@
 #include <string>
 using namespace std;
 
-
-
 struct User{
   string name;
   string phoneNumber;
